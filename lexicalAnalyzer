@@ -1,0 +1,59 @@
+cd D:\Netbeans projects\lexicalAnalyzer; JAVA_HOME=D:\\JDK cmd /c "\"D:\\netbeans\\NetBeans-21\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" -Dexec.appArgs= -Dexec.mainClass=com.mycompany.lexicalanalyzer.LexicalAnalyzer -Dexec.executable=D:\\JDK\\bin\\java.exe -Dmaven.ext.class.path=D:\\netbeans\\NetBeans-21\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar --no-transfer-progress process-classes org.codehaus.mojo:exec-maven-plugin:3.1.0:exec"
+Scanning for projects...
+
+-------------------< com.mycompany:lexicalAnalyzer >--------------------
+Building lexicalAnalyzer 1.0-SNAPSHOT
+  from pom.xml
+--------------------------------[ jar ]---------------------------------
+
+--- resources:3.3.1:resources (default-resources) @ lexicalAnalyzer ---
+skip non existing resourceDirectory D:\Netbeans projects\lexicalAnalyzer\src\main\resources
+
+--- compiler:3.11.0:compile (default-compile) @ lexicalAnalyzer ---
+Changes detected - recompiling the module! :source
+Compiling 1 source file with javac [debug target 21] to target\classes
+
+--- exec:3.1.0:exec (default-cli) @ lexicalAnalyzer ---
+Enter your code (type 'end' to finish):
+ public void dentist()
+KEYWORD: public at line 1
+KEYWORD: void at line 1
+IDENTIFIER: dentist at line 1
+OPERATOR/PUNCTUATOR: ( at line 1
+OPERATOR/PUNCTUATOR: ) at line 1
+int abc = 34 ;
+DATA TYPE: int at line 2
+IDENTIFIER: abc at line 2
+CONSTANT: 34 at line 2
+OPERATOR/PUNCTUATOR: ; at line 2
+.
+Error: Invalid token '.' at line 3
+,
+OPERATOR/PUNCTUATOR: , at line 4
+;
+OPERATOR/PUNCTUATOR: ; at line 5
+'
+Error: Invalid token ''' at line 6
+"
+Error: Invalid token '"' at line 7
+=
+OPERATOR/PUNCTUATOR: = at line 8
+gh = 3 ;
+IDENTIFIER: gh at line 9
+CONSTANT: 3 at line 9
+OPERATOR/PUNCTUATOR: ; at line 9
+the = 7
+IDENTIFIER: the at line 10
+CONSTANT: 7 at line 10
++
+OPERATOR/PUNCTUATOR: + at line 11
+hee + 45
+IDENTIFIER: hee at line 12
+CONSTANT: 45 at line 12
+end
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  04:04 min
+Finished at: 2024-03-01T20:02:12+05:00
+------------------------------------------------------------------------
